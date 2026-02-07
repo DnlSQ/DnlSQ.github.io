@@ -272,3 +272,120 @@ footer {
   padding: 25px 10px;
   font-size: 0.85rem;
 }
+/* ===== Projects (Grid + Cards) ===== */
+.projects-grid{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.proj-card{
+  background:#fff;
+  border-radius:14px;
+  padding:22px 22px 18px;
+  border-left:5px solid #38bdf8;
+  box-shadow: 0 12px 32px rgba(56,189,248,0.18);
+}
+
+.proj-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:10px;
+}
+
+.proj-subtitle{
+  margin: 8px 0 0;
+  color:#4b5563;
+  font-size:0.95rem;
+}
+
+.proj-status{
+  font-size:0.75rem;
+  font-weight:700;
+  color:#0b1220;
+  background:#e0f2fe;
+  border:1px solid rgba(56,189,248,0.5);
+  padding:6px 10px;
+  border-radius:999px;
+  white-space:nowrap;
+}
+
+.proj-status-muted{
+  background:#f3f4f6;
+  border:1px solid #e5e7eb;
+  color:#374151;
+}
+
+.proj-badges{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin: 14px 0 14px;
+}
+
+.badge{
+  background:#e0f2fe;
+  color:#075985;
+  border-radius:999px;
+  padding:6px 12px;
+  font-size:0.82rem;
+  font-weight:700;
+  box-shadow: 0 8px 18px rgba(56,189,248,0.25);
+}
+
+.proj-points{
+  margin: 0;
+  padding-left: 18px;
+  color:#111827;
+}
+
+.proj-actions{
+  display:flex;
+  gap:10px;
+  margin-top:16px;
+  flex-wrap:wrap;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:700;
+  font-size:0.85rem;
+  text-decoration:none;
+  border:1px solid #e5e7eb;
+  color:#111827;
+  background:#fff;
+  transition: all 0.2s ease;
+}
+
+.btn:hover{
+  transform: translateY(-1px);
+  border-color:#38bdf8;
+  box-shadow: 0 10px 22px rgba(56,189,248,0.22);
+}
+
+.btn-primary{
+  background:#111827;
+  color:#e5e7eb;
+  border:1px solid #374151;
+}
+
+.btn-primary:hover{
+  border-color:#38bdf8;
+  color:#38bdf8;
+}
+
+.btn-disabled{
+  opacity:0.5;
+  pointer-events:none;
+}
+
+@media (max-width: 900px){
+  .projects-grid{ grid-template-columns: 1fr; }
+}
