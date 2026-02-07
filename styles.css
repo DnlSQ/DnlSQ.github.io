@@ -47,7 +47,7 @@ h4 {
   margin-bottom: 10px;
 }
 
-/* ===== Navbar (Material Style) ===== */
+/* ===== Navbar (Material / GitHub style) ===== */
 .navbar {
   position: sticky;
   top: 0;
@@ -56,7 +56,7 @@ h4 {
   height: 64px;
   display: flex;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  box-shadow: 0 2px 6px rgba(56, 189, 248, 0.25);
 }
 
 .nav-container {
@@ -101,18 +101,19 @@ h4 {
   font-size: 0.85rem;
   font-weight: 600;
   padding: 8px 16px;
-  border-radius: 4px;
-  transition: background-color 0.25s ease;
+  border-radius: 6px;
+  transition: all 0.25s ease;
 }
 
 .nav-btn.linkedin {
   background-color: transparent;
   color: #ffffff;
-  border: 1px solid #0a66c2;
+  border: 1px solid #38bdf8;
 }
 
 .nav-btn.linkedin:hover {
-  background-color: #0a66c2;
+  background-color: #38bdf8;
+  color: #020617;
 }
 
 .nav-btn.github {
@@ -140,17 +141,118 @@ h4 {
   color: #d1d5db;
 }
 
-/* ===== Cards ===== */
+/* ===== Cards (Base) ===== */
 .project {
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 14px;
   padding: 30px;
   margin-bottom: 30px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+  border-left: 5px solid #38bdf8;
 }
 
 .project p {
   margin-bottom: 15px;
+}
+
+/* ===== Skills Accordion ===== */
+.accordion {
+  margin-bottom: 16px;
+}
+
+.accordion summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background-color: #111827;
+  border: 1px solid #374151;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.accordion summary:hover {
+  background-color: #020617;
+  border-color: #38bdf8;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion summary::after {
+  content: "▾";
+  font-size: 0.9rem;
+  color: #9ca3af;
+  transition: transform 0.2s ease;
+}
+
+.accordion[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  background-color: #ffffff;
+  border-radius: 14px;
+  margin-top: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.18);
+  border-left: 5px solid #38bdf8;
+}
+
+/* ===== Skills Pills ===== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  background-color: #e0f2fe;
+  color: #075985;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.35);
+}
+
+/* ===== Technical Capabilities ===== */
+.cap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.cap-item {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 20px 22px;
+  font-weight: 600;
+  color: #111827;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.22);
+  border-left: 5px solid #38bdf8;
+}
+
+.cap-item:hover {
+  transform: translateY(-2px);
+  transition: transform 0.15s ease;
+}
+
+@media (max-width: 800px) {
+  .cap-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ===== Lists ===== */
@@ -162,24 +264,6 @@ ul li {
   margin-bottom: 10px;
 }
 
-/* ===== Skills Pills ===== */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
-}
-
-.skills li {
-  background-color: #e0f2fe;
-  color: #075985;
-  padding: 8px 16px;
-  border-radius: 999px;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
 /* ===== Footer ===== */
 footer {
   background-color: #020617;
@@ -187,102 +271,4 @@ footer {
   text-align: center;
   padding: 25px 10px;
   font-size: 0.85rem;
-}
-/* ===== Skills Accordion (GitHub-like dropdown style) ===== */
-.accordion {
-  margin-bottom: 14px;
-}
-
-/* el contenedor ya no necesita card */
-.accordion-content {
-  background-color: #ffffff;
-  border-radius: 10px;
-  margin-top: 12px;
-  padding: 18px 20px 20px 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
-}
-
-/* summary estilo "main" */
-.accordion summary {
-  list-style: none;
-  cursor: pointer;
-
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-
-  padding: 8px 14px;
-  border-radius: 10px;
-
-  background-color: #111827;      /* oscuro tipo GitHub */
-  border: 1px solid #374151;      /* borde gris */
-  color: #e5e7eb;                 /* texto claro */
-
-  font-size: 0.9rem;
-  font-weight: 600;
-
-  transition: transform 0.15s ease, border-color 0.2s ease, background-color 0.2s ease;
-}
-
-.accordion summary:hover {
-  border-color: #6b7280;
-  background-color: #0b1220;
-}
-
-/* oculta el marker default */
-.accordion summary::-webkit-details-marker {
-  display: none;
-}
-
-/* flecha tipo dropdown */
-.accordion summary::after {
-  content: "▾";
-  font-size: 0.9rem;
-  color: #9ca3af;
-  transform: translateY(-1px);
-  transition: transform 0.2s ease;
-}
-
-.accordion[open] summary::after {
-  transform: rotate(180deg) translateY(1px);
-}
-
-/* pequeños ajustes para los chips dentro */
-.accordion-content .skills {
-  margin-top: 6px;
-}
-/* ===== Technical Capabilities (Grid) ===== */
-.cap-grid {
-  display: grid !important;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 24px;
-}
-
-.cap-item {
-  background-color: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  padding: 18px 20px;
-  font-weight: 600;
-  color: #111827;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
-  position: relative;
-}
-
-.cap-item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 5px;
-  height: 100%;
-  background-color: #38bdf8;
-  border-radius: 12px 0 0 12px;
-}
-
-@media (max-width: 800px) {
-  .cap-grid {
-    grid-template-columns: 1fr;
-  }
 }
