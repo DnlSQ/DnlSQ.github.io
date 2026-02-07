@@ -484,3 +484,13 @@ footer {
     height: 190px;
   }
 }
+/* ===== FORCE HERO BACKGROUND (FINAL OVERRIDE) ===== */
+#home.hero {
+  background: linear-gradient(135deg, #0f172a, #020617) !important;
+  color: #ffffff !important;
+}
+#home.hero h1,
+#home.hero h2,
+#home.hero p {
+  color: inherit;
+}
