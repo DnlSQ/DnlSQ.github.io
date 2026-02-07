@@ -251,3 +251,46 @@ footer {
 .accordion-content .skills {
   margin-top: 6px;
 }
+/* ===== Technical Capabilities (Grid) ===== */
+.cap-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.cap-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px 18px;
+  font-weight: 600;
+  color: #111827;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+/* “accent bar” sutil */
+.cap-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background: #38bdf8;
+  opacity: 0.9;
+}
+
+.cap-item:hover {
+  transform: translateY(-1px);
+  transition: transform 0.15s ease;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .cap-grid {
+    grid-template-columns: 1fr;
+  }
+}
