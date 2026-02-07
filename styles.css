@@ -389,3 +389,38 @@ footer {
 @media (max-width: 900px){
   .projects-grid{ grid-template-columns: 1fr; }
 }
+/* ===== HERO CENTERING FIX ===== */
+
+.hero {
+  min-height: calc(100vh - 80px); /* descuenta altura del navbar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero h2 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--primary-blue);
+  margin-bottom: 28px;
+}
+
+.hero p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+  color: #e5e7eb;
+}
