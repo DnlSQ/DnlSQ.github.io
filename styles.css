@@ -470,3 +470,87 @@ footer{
     padding: 60px 18px;
   }
 }
+/* ================================
+   CERTIFICATIONS + EDUCATION FIX
+   (cards + consistent spacing)
+================================ */
+
+/* Better spacing between category titles */
+#certifications h4,
+#education h4 {
+  margin-top: 22px;
+  margin-bottom: 10px;
+}
+
+/* Wrap each category list in a "card" style without changing HTML */
+#certifications ul,
+#education ul {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin: 12px 0 18px;
+  border-left: 5px solid #38bdf8;
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.14);
+}
+
+/* Cleaner bullets */
+#certifications ul li,
+#education ul li {
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+/* Make category headings more visible */
+#certifications h4 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0b1220;
+}
+
+/* Education: make the degree block look like a card */
+#education .container > h4,
+#education .container > p {
+  max-width: 900px;
+}
+
+#education .container > h4 {
+  margin-top: 18px;
+}
+
+/* Create a card effect for education text (no HTML changes) */
+#education .container {
+  position: relative;
+}
+
+#education .container > h4 + p,
+#education .container > h4 + p + p {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin: 12px 0;
+  border-left: 5px solid #38bdf8;
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.14);
+}
+
+/* Make the University line look like a subtitle */
+#education .container > h4 + p {
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+/* Description text */
+#education .container > h4 + p + p {
+  color: #374151;
+  margin-top: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #certifications ul,
+  #education ul,
+  #education .container > h4 + p,
+  #education .container > h4 + p + p {
+    padding: 14px 14px;
+  }
+}
