@@ -4,324 +4,287 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Daniel Felipe Solano Quiros | Software Engineer</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <!-- ===== Navbar ===== -->
-  <nav class="navbar">
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
     <div class="nav-container">
-
-      <div class="nav-left">
+      <nav class="nav-left" aria-label="Main navigation">
         <a href="#home">Home</a>
         <a href="#skills">Skills</a>
         <a href="#capabilities">Technical Capabilities</a>
         <a href="#projects">Projects</a>
         <a href="#certifications">Certifications</a>
         <a href="#education">Education</a>
-      </div>
+      </nav>
 
       <div class="nav-right">
-        <a class="nav-btn linkedin"
-           href="https://www.linkedin.com/in/daniel-felipe-solano-quiros"
-           target="_blank">
-          LinkedIn
-        </a>
-
-        <a class="nav-btn github"
-           href="https://github.com/DnlSQ"
-           target="_blank">
-          GitHub
-        </a>
+        <a class="nav-btn linkedin" target="_blank" rel="noopener" href="https://www.linkedin.com/in/daniel-felipe-solano-quiros">LinkedIn</a>
+        <a class="nav-btn github" target="_blank" rel="noopener" href="https://github.com/DnlSQ">GitHub</a>
       </div>
-
     </div>
-  </nav>
+  </header>
 
-  <!-- ===== Hero / Home ===== -->
-<section id="home" class="hero">
-  <div class="hero-inner">
-    <div class="hero-content">
-      <h1>Daniel Felipe Solano Quiros</h1>
+  <!-- ===== HERO (RECTANGULAR) ===== -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <h1>Daniel Felipe Solano Quiros</h1>
 
-      <h2>
-        Software Engineer | C# .NET | SQL Server | Automation & Industrial Systems
-      </h2>
+        <h2>Software Engineer | C# .NET | SQL Server | Automation & Industrial Systems</h2>
 
-      <p>
-        Ingeniero en Sistemas con más de 4 años de experiencia en entornos transnacionales,
-        con un fuerte enfoque en análisis de fallos, documentación técnica y estandarización
-        de procesos como base para la construcción de soluciones robustas y confiables.
-      </p>
+        <p>
+          Ingeniero en Sistemas con más de 4 años de experiencia en entornos transnacionales, con un fuerte enfoque en
+          análisis de fallos, documentación técnica y estandarización de procesos como base para la construcción de
+          soluciones robustas y confiables.
+        </p>
 
-      <p>
-        Este enfoque se aplica actualmente al desarrollo de software, mediante análisis
-        estructurado, diseño lógico y documentación técnica, orientado a la construcción
-        de sistemas backend confiables, mantenibles y escalables, con foco en control de
-        información, trazabilidad y eficiencia operativa.
-      </p>
+        <p>
+          Este enfoque se aplica actualmente al desarrollo de software, mediante análisis estructurado, diseño lógico y
+          documentación técnica, orientado a la construcción de sistemas backend confiables, mantenibles y escalables,
+          con foco en control de información, trazabilidad y eficiencia operativa.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-    <!-- ===== Projects ===== -->
-<section id="projects">
-  <h3>Projects</h3>
-
-  <div class="projects-grid">
-
-    <!-- Project 1 -->
-    <article class="proj-card">
-      <div class="proj-top">
-        <div>
-          <h4>Elegancia Integral S.A. — Salon Management System</h4>
-          <p class="proj-subtitle">
-            Desktop system for appointments, clients, employees, services and inventory operations.
-          </p>
-        </div>
-
-        <span class="proj-status">MVP (Academic)</span>
-      </div>
-
-      <div class="proj-badges">
-        <span class="badge">C#</span>
-        <span class="badge">.NET</span>
-        <span class="badge">SQL Server</span>
-        <span class="badge">Stored Procedures</span>
-        <span class="badge">Layered Architecture</span>
-      </div>
-
-      <ul class="proj-points">
-        <li>Structured solution with separation of concerns (Presentation / Business / Data Access).</li>
-        <li>Modules for CRUD operations and operational flow focused on reliability and traceability.</li>
-        <li>SQL-based persistence with stored procedures for core operations.</li>
-      </ul>
-
-      <!-- Images (optional) -->
-      <!-- Si tienes screenshots en ese repo, duplicamos este bloque y ponemos las URLs -->
-      <!--
-      <div class="proj-media">
-        <img src="URL_IMAGEN_1" alt="Salon System screenshot 1">
-        <img src="URL_IMAGEN_2" alt="Salon System screenshot 2">
-      </div>
-      -->
-
-      <div class="proj-actions">
-        <a class="btn btn-primary" target="_blank" href="https://github.com/DnlSQ/Solucion_Salon1">Repository</a>
-        <a class="btn" target="_blank" href="https://github.com/DnlSQ/Solucion_Salon1/blob/master/README.md">Readme</a>
-        <a class="btn" target="_blank" href="https://github.com/DnlSQ/Solucion_Salon1/tree/master/assets/screenshots">Screenshots</a>
-      </div>
-    </article>
-
-    <!-- Project 2 -->
-    <article class="proj-card">
-      <div class="proj-top">
-        <div>
-          <h4>Inventory Management System — Layered Solution</h4>
-          <p class="proj-subtitle">
-            Inventory solution built in C# with clear separation between Presentation, Business and SQL Data Access.
-          </p>
-        </div>
-
-        <span class="proj-status">MVP (Academic)</span>
-      </div>
-
-      <div class="proj-badges">
-        <span class="badge">C#</span>
-        <span class="badge">Layered Architecture</span>
-        <span class="badge">SQL Data Access</span>
-        <span class="badge">Unit Tests</span>
-        <span class="badge">UX</span>
-      </div>
-
-      <ul class="proj-points">
-        <li>Solution organized by layers: Presentacion / Negocio / AccesoDatosSQL.</li>
-        <li>Includes dedicated test projects: TestAccesoDatos and TestNegocio.</li>
-        <li>UX folder included with UI references.</li>
-      </ul>
-
-      <!-- IMÁGENES (pon aquí las 2–3 mejores) -->
-      <!-- IMPORTANTE: pega aquí las URLs “raw” de GitHub (te explico abajo cómo sacarlas) -->
-     
-
-      <div class="proj-actions">
-        <a class="btn btn-primary" target="_blank" href="https://github.com/DnlSQ/Solucion_InventarioFSv1.2">Repository</a>
-        <a class="btn" target="_blank" href="https://github.com/DnlSQ/Solucion_InventarioFSv1.2/blob/master/README.md">Readme</a>
-        <a class="btn" target="_blank" href="https://github.com/DnlSQ/Solucion_InventarioFSv1.2/tree/master/assets">Screenshots</a>
-      </div>
-    </article>
-
-    <!-- Project 3 -->
-<article class="proj-card">
-  <div class="proj-top">
-    <div>
-      <h4>Come Sano — AI-assisted Healthy Recipe App</h4>
-      <p class="proj-subtitle">
-        Mobile app concept (MVP in development) to suggest healthy recipes from ingredients entered by text or photo.
-      </p>
-    </div>
-
-    <span class="proj-status proj-status-muted">In development</span>
-  </div>
-
-  <div class="proj-badges">
-    <span class="badge">Mobile App</span>
-    <span class="badge">AI-assisted</span>
-    <span class="badge">Product MVP</span>
-    <span class="badge">UX/UI</span>
-  </div>
-
-  <ul class="proj-points">
-    <li>Ingredient input by text (MVP) and photo-assisted input (planned).</li>
-    <li>Recipe list with calories per portion and estimated preparation time.</li>
-    <li>Step-by-step recipe instructions with a friendly, intuitive experience.</li>
-    <li>Designed for users aiming to eat healthier and improve lifestyle habits.</li>
-  </ul>
-
-  <div class="proj-actions">
-<a class="btn" target="_blank" href="https://github.com/DnlSQ/come-sano-mvp/blob/master/README.md">Readme</a>
-
-  </div>
-</article>
-
-  </div>
-</section>
-
-  <!-- ===== Skills ===== -->
+  <!-- ===== SKILLS ===== -->
   <section id="skills">
-  <h3>Skills</h3>
+    <div class="container">
+      <h3>Skills</h3>
 
-  <details class="accordion" open>
-    <summary>Backend & Programming</summary>
-    <div class="accordion-content">
-      <ul class="skills">
-        <li>C#</li>
-        <li>.NET</li>
-        <li>Python (basic)</li>
-        <li>JavaScript (basic)</li>
-      </ul>
+      <details class="accordion">
+        <summary>Backend &amp; Programming</summary>
+        <div class="accordion-content">
+          <ul class="skills">
+            <li>C#</li>
+            <li>.NET</li>
+            <li>Python (basic)</li>
+            <li>JavaScript (basic)</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>Databases &amp; Data</summary>
+        <div class="accordion-content">
+          <ul class="skills">
+            <li>SQL Server</li>
+            <li>MongoDB</li>
+            <li>Relational Databases</li>
+            <li>NoSQL Databases</li>
+            <li>Stored Procedures</li>
+            <li>Data Modeling</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>Frontend &amp; UI</summary>
+        <div class="accordion-content">
+          <ul class="skills">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>Tools &amp; Platforms</summary>
+        <div class="accordion-content">
+          <ul class="skills">
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>Postman</li>
+            <li>Visual Studio</li>
+            <li>SQL Server Management Studio (SSMS)</li>
+          </ul>
+        </div>
+      </details>
+
+      <details class="accordion">
+        <summary>Engineering &amp; Automation</summary>
+        <div class="accordion-content">
+          <ul class="skills">
+            <li>Process Automation</li>
+            <li>Industrial Systems</li>
+            <li>Technical Documentation</li>
+            <li>Continuous Improvement</li>
+          </ul>
+        </div>
+      </details>
     </div>
-  </details>
+  </section>
 
-  <details class="accordion">
-    <summary>Databases & Data</summary>
-    <div class="accordion-content">
-      <ul class="skills">
-        <li>SQL Server</li>
-        <li>MongoDB</li>
-        <li>Relational Databases</li>
-        <li>NoSQL Databases</li>
-        <li>Stored Procedures</li>
-        <li>Data Modeling</li>
-      </ul>
+  <!-- ===== TECHNICAL CAPABILITIES ===== -->
+  <section id="capabilities">
+    <div class="container">
+      <h3>Technical Capabilities</h3>
+
+      <div class="cap-grid">
+        <div class="cap-item">Backend development with structured business logic and data persistence.</div>
+        <div class="cap-item">Design and implementation of CRUD-based systems using layered architecture.</div>
+        <div class="cap-item">Relational database design, queries and stored procedures.</div>
+        <div class="cap-item">Process automation and system-oriented problem solving.</div>
+        <div class="cap-item">Analysis of operational data to support decision making.</div>
+        <div class="cap-item">Technical documentation and structured system design.</div>
+      </div>
     </div>
-  </details>
+  </section>
 
-  <details class="accordion">
-    <summary>Frontend & UI</summary>
-    <div class="accordion-content">
-      <ul class="skills">
-        <li>HTML</li>
-        <li>CSS</li>
-      </ul>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <h3>Projects</h3>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="proj-card">
+          <div class="proj-top">
+            <div>
+              <h4>Salon Management System (C#/.NET)</h4>
+              <p class="proj-subtitle">
+                CRUD-based system for managing salon operations, built with layered architecture and SQL Server persistence.
+              </p>
+            </div>
+            <span class="proj-status">Functional</span>
+          </div>
+
+          <div class="proj-badges">
+            <span class="badge">C#</span>
+            <span class="badge">.NET</span>
+            <span class="badge">SQL Server</span>
+            <span class="badge">CRUD</span>
+            <span class="badge">Layered Architecture</span>
+          </div>
+
+          <ul class="proj-points">
+            <li>Implements structured CRUD flows with business rules and validations.</li>
+            <li>Uses SQL Server persistence and clear separation of responsibilities.</li>
+            <li>Focused on maintainability and technical documentation.</li>
+          </ul>
+
+          <div class="proj-actions">
+            <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/DnlSQ/Solucion_Salon1">Repository</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="proj-card">
+          <div class="proj-top">
+            <div>
+              <h4>Inventory Management System (C#/.NET)</h4>
+              <p class="proj-subtitle">
+                Inventory control system built with SQL Server persistence, validations and backend-oriented design.
+              </p>
+            </div>
+            <span class="proj-status">MVP functional</span>
+          </div>
+
+          <div class="proj-badges">
+            <span class="badge">C#</span>
+            <span class="badge">.NET</span>
+            <span class="badge">SQL Server</span>
+            <span class="badge">SSMS</span>
+            <span class="badge">CRUD</span>
+          </div>
+
+          <ul class="proj-points">
+            <li>Product and stock management with structured persistence.</li>
+            <li>Focus on maintainable backend logic and clear data handling.</li>
+            <li>Documentation included via README and project structure.</li>
+          </ul>
+
+          <div class="proj-actions">
+            <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/DnlSQ/Solucion_InventarioFSv1.2">Repository</a>
+            <a class="btn" target="_blank" rel="noopener" href="https://github.com/DnlSQ/Solucion_InventarioFSv1.2/blob/main/README.md">README</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="proj-card">
+          <div class="proj-top">
+            <div>
+              <h4>Come Sano — AI-assisted Healthy Recipe App</h4>
+              <p class="proj-subtitle">
+                Mobile app concept (MVP in development) to suggest healthy recipes from ingredients entered by text or photo.
+              </p>
+            </div>
+            <span class="proj-status proj-status-muted">In development</span>
+          </div>
+
+          <div class="proj-badges">
+            <span class="badge">Mobile App</span>
+            <span class="badge">AI-assisted</span>
+            <span class="badge">Product MVP</span>
+            <span class="badge">UX/UI</span>
+          </div>
+
+          <ul class="proj-points">
+            <li>Ingredient input by text (MVP) and photo-assisted input (planned).</li>
+            <li>Recipe list with calories per portion and estimated preparation time.</li>
+            <li>Step-by-step recipe instructions with a friendly, intuitive experience.</li>
+            <li>Designed for users aiming to eat healthier and improve lifestyle habits.</li>
+          </ul>
+
+          <div class="proj-actions">
+            <a class="btn btn-disabled" href="#">Repository (in progress)</a>
+          </div>
+        </article>
+
+      </div>
     </div>
-  </details>
+  </section>
 
-  <details class="accordion">
-    <summary>Tools & Platforms</summary>
-    <div class="accordion-content">
-      <ul class="skills">
-        <li>Git</li>
-        <li>GitHub</li>
-        <li>Postman</li>
-        <li>Visual Studio</li>
-        <li>SQL Server Management Studio (SSMS)</li>
-      </ul>
-    </div>
-  </details>
-
-  <details class="accordion">
-    <summary>Engineering & Automation</summary>
-    <div class="accordion-content">
-      <ul class="skills">
-        <li>Process Automation</li>
-        <li>Industrial Systems</li>
-        <li>Technical Documentation</li>
-        <li>Continuous Improvement</li>
-      </ul>
-    </div>
-  </details>
-
-</section>
-
-
-  <!-- ===== Technical Capabilities ===== -->
-<section id="capabilities">
-  <h3>Technical Capabilities</h3>
-
-  <div class="cap-grid">
-    <div class="cap-item">Backend development with structured business logic and data persistence.</div>
-    <div class="cap-item">Design and implementation of CRUD-based systems using layered architecture.</div>
-    <div class="cap-item">Relational database design, queries and stored procedures.</div>
-    <div class="cap-item">Process automation and system-oriented problem solving.</div>
-    <div class="cap-item">Analysis of operational data to support decision making.</div>
-    <div class="cap-item">Technical documentation and structured system design.</div>
-  </div>
-</section>
-
-  <!-- ===== Certifications ===== -->
+  <!-- ===== CERTIFICATIONS ===== -->
   <section id="certifications">
-    <h3>Certifications</h3>
+    <div class="container">
+      <h3>Certifications</h3>
 
-    <div class="project">
-      <h4>Software Development & Data</h4>
+      <h4>Software Development &amp; Data</h4>
       <ul>
-        <li>Artificial Intelligence & ChatGPT – From Zero to Advanced (Udemy)</li>
+        <li>Artificial Intelligence &amp; ChatGPT — From Zero to Advanced (Udemy)</li>
         <li>Prompt Engineering (LinkedIn Learning)</li>
         <li>Python Essential Training (LinkedIn Learning)</li>
         <li>Data Analysis Foundations (LinkedIn Learning)</li>
       </ul>
-    </div>
 
-    <div class="project">
-      <h4>Quality, Process & Engineering</h4>
+      <h4>Quality, Process &amp; Engineering</h4>
       <ul>
-        <li>Six Sigma Green Belt – Training (DMAIC)</li>
-        <li>ISO 9001:2015 – Quality Management Systems</li>
+        <li>Six Sigma Green Belt — Training (DMAIC)</li>
+        <li>ISO 9001:2015 — Quality Management Systems</li>
         <li>Fundamentals of Operational Excellence</li>
       </ul>
-    </div>
 
-    <div class="project">
-      <h4>Agile & Project Management</h4>
+      <h4>Agile &amp; Project Management</h4>
       <ul>
         <li>Scrum Fundamentals</li>
-        <li>Jira Administration – Basic</li>
+        <li>Jira Administration — Basic</li>
       </ul>
     </div>
   </section>
 
-  <!-- ===== Education ===== -->
+  <!-- ===== EDUCATION ===== -->
   <section id="education">
-    <h3>Education</h3>
+    <div class="container">
+      <h3>Education</h3>
 
-    <div class="project">
       <h4>Bachelor’s Degree in Systems Engineering</h4>
-      <p>Universidad Americana (UAM) – Costa Rica</p>
+      <p>Universidad Americana (UAM) — Costa Rica</p>
       <p>
-        Formación enfocada en desarrollo de software, bases de datos,
-        análisis de sistemas y resolución estructurada de problemas.
+        Formación enfocada en desarrollo de software, bases de datos, análisis de sistemas y resolución estructurada de problemas.
       </p>
     </div>
   </section>
 
-  <!-- ===== Footer ===== -->
   <footer>
-    <p>© 2026 Daniel Felipe Solano Quiros</p>
+    <p>© 2026 Daniel Felipe Solano Quiros — Portfolio</p>
   </footer>
 
 </body>
