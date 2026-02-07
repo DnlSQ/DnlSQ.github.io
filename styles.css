@@ -554,3 +554,26 @@ footer{
     padding: 14px 14px;
   }
 }
+/* Quitar bullets en Certifications (mantener formato card) */
+#certifications ul{
+  list-style: none;
+  padding-left: 18px; /* controla el margen interno del card */
+}
+
+#certifications ul li{
+  position: relative;
+  padding-left: 18px;
+}
+
+/* Reemplazar bullet por un "dot" azul elegante (opcional) */
+#certifications ul li::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #38bdf8;
+  box-shadow: 0 6px 14px rgba(56,189,248,.35);
+}
