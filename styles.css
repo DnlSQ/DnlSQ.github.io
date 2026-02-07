@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
@@ -43,11 +47,74 @@ h4 {
   margin-bottom: 10px;
 }
 
+/* ===== Navbar ===== */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #020617;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left menu */
+.nav-left a {
+  margin-right: 18px;
+  color: #e5e7eb;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.25s ease;
+}
+
+.nav-left a:hover {
+  color: #38bdf8;
+}
+
+/* Right buttons */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn {
+  margin-left: 12px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.nav-btn.linkedin {
+  background-color: #0a66c2;
+  color: #ffffff;
+}
+
+.nav-btn.github {
+  background-color: #111827;
+  color: #ffffff;
+}
+
+.nav-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
 /* ===== Hero ===== */
 .hero {
   background: linear-gradient(135deg, #0f172a, #020617);
   color: #ffffff;
-  padding: 90px 20px;
+  padding: 120px 20px 90px;
   text-align: center;
 }
 
@@ -56,28 +123,6 @@ h4 {
   margin: 0 auto;
   font-size: 1.05rem;
   color: #d1d5db;
-}
-
-/* ===== Links ===== */
-.links {
-  margin-top: 35px;
-}
-
-.links a {
-  display: inline-block;
-  margin: 8px 12px;
-  padding: 12px 22px;
-  background-color: #38bdf8;
-  color: #020617;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: all 0.25s ease;
-}
-
-.links a:hover {
-  transform: translateY(-2px);
-  background-color: #0ea5e9;
 }
 
 /* ===== Cards ===== */
