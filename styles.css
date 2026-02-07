@@ -188,3 +188,47 @@ footer {
   padding: 25px 10px;
   font-size: 0.85rem;
 }
+/* ===== Skills Accordion ===== */
+.accordion {
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.accordion summary {
+  list-style: none; /* oculta el marker default en algunos navegadores */
+  cursor: pointer;
+  padding: 18px 20px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.accordion summary::-webkit-details-marker {
+  display: none; /* oculta el triángulo default en Chrome */
+}
+
+/* Flecha (chevron) */
+.accordion summary::after {
+  content: "▾";
+  font-size: 1.1rem;
+  color: #6b7280;
+  transition: transform 0.2s ease;
+}
+
+.accordion[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  padding: 0 20px 20px 20px;
+}
+
+.accordion-content .skills {
+  margin-top: 6px;
+}
