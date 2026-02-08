@@ -1,331 +1,455 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Daniel Felipe Solano Quiros | Software Engineer</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
   <!-- ===== NAVBAR ===== -->
   <header class="navbar">
     <div class="nav-container">
-      <nav class="nav-left" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#capabilities">Technical Capabilities</a>
-        <a href="#projects">Projects</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">☰</button>
+
+      <nav id="primary-nav" class="nav-left" aria-label="Main navigation">
+        <a href="#home" data-en="Home" data-es="Inicio">Home</a>
+        <a href="#skills" data-en="Skills" data-es="Habilidades">Skills</a>
+        <a href="#capabilities" data-en="Technical Capabilities" data-es="Capacidades Técnicas">Technical Capabilities</a>
+        <a href="#projects" data-en="Projects" data-es="Proyectos">Projects</a>
+        <a href="#certifications" data-en="Certifications" data-es="Certificaciones">Certifications</a>
+        <a href="#education" data-en="Education" data-es="Educación">Education</a>
+        <a href="#contact" data-en="Contact" data-es="Contacto">Contact</a>
       </nav>
 
       <div class="nav-right">
-        <a class="nav-btn linkedin" target="_blank" rel="noopener" href="https://www.linkedin.com/in/daniel-felipe-solano-quiros">LinkedIn</a>
-        <a class="nav-btn github" target="_blank" rel="noopener" href="https://github.com/DnlSQ">GitHub</a>
+        <button id="langToggle" class="nav-btn lang" type="button" aria-label="Switch language">ES</button>
+
+        <a class="nav-btn" target="_blank" rel="noopener" href="https://www.linkedin.com/in/daniel-felipe-solano-quiros">
+          LinkedIn
+        </a>
+        <a class="nav-btn" target="_blank" rel="noopener" href="https://github.com/DnlSQ">
+          GitHub
+        </a>
       </div>
     </div>
   </header>
 
-  <!-- ===== HERO (RECTANGULAR) ===== -->
+  <!-- ===== HERO ===== -->
   <section id="home" class="hero">
-    <div class="hero-inner">
-      <div class="hero-content">
-        <h1>Daniel Felipe Solano Quiros</h1>
+    <div class="hero-bg">
+      <div class="hero-inner">
+        <h1 data-en="Daniel Felipe Solano Quiros" data-es="Daniel Felipe Solano Quiros">Daniel Felipe Solano Quiros</h1>
 
-        <h2>Software Engineer | C# .NET | SQL Server | Automation & Industrial Systems</h2>
+        <h2 data-en="Software Engineer | C# .NET | SQL Server | Automation & Industrial Systems"
+            data-es="Ingeniero de Software | C# .NET | SQL Server | Automatización y Sistemas Industriales">
+          Software Engineer | C# .NET | SQL Server | Automation & Industrial Systems
+        </h2>
 
-        <p>
-          Ingeniero en Sistemas con más de 4 años de experiencia en entornos transnacionales, con un fuerte enfoque en
-          análisis de fallos, documentación técnica y estandarización de procesos como base para la construcción de
-          soluciones robustas y confiables.
+        <p data-en="Systems Engineer with 4+ years of experience in multinational manufacturing environments, with a strong focus on failure analysis, technical documentation, and process standardization as a foundation for building robust and reliable solutions."
+           data-es="Ingeniero en Sistemas con más de 4 años de experiencia en entornos transnacionales, con un fuerte enfoque en análisis de fallos, documentación técnica y estandarización de procesos como base para la construcción de soluciones robustas y confiables.">
+          Systems Engineer with 4+ years of experience in multinational manufacturing environments, with a strong focus on failure analysis, technical documentation, and process standardization as a foundation for building robust and reliable solutions.
         </p>
 
-        <p>
-          Este enfoque se aplica actualmente al desarrollo de software, mediante análisis estructurado, diseño lógico y
-          documentación técnica, orientado a la construcción de sistemas backend confiables, mantenibles y escalables,
-          con foco en control de información, trazabilidad y eficiencia operativa.
+        <p data-en="I apply this approach to software development through structured analysis, logical design, and clear documentation—building data-driven backend systems that are reliable, maintainable, and scalable, with an emphasis on information control, traceability, and operational efficiency."
+           data-es="Este enfoque se aplica actualmente al desarrollo de software, mediante análisis estructurado, diseño lógico y documentación técnica, orientado a la construcción de sistemas backend confiables, mantenibles y escalables, con foco en control de información, trazabilidad y eficiencia operativa.">
+          I apply this approach to software development through structured analysis, logical design, and clear documentation—building data-driven backend systems that are reliable, maintainable, and scalable, with an emphasis on information control, traceability, and operational efficiency.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects">
-    <div class="container">
-      <h3>Projects</h3>
+  <main class="container">
+    
+    
+     <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <h3 data-en="Projects" data-es="Proyectos">Projects</h3>
+      <div class="divider"></div>
 
       <div class="projects-grid">
-
         <!-- Project 1 -->
         <article class="proj-card">
           <div class="proj-top">
-            <div>
-              <h4>Salon Management System (C#/.NET)</h4>
-              <p class="proj-subtitle">
-                CRUD-based system for managing salon operations, built with layered architecture and SQL Server persistence.
-              </p>
-            </div>
-            <span class="proj-status">Functional</span>
+            <h4 data-en="Salon Management System (C#/.NET)" data-es="Sistema de Gestión de Salón (C#/.NET)">Salon Management System (C#/.NET)</h4>
+            <span class="proj-status" data-en="Functional" data-es="Funcional">Functional</span>
           </div>
 
-          <div class="proj-badges">
-            <span class="badge">C#</span>
-            <span class="badge">.NET</span>
-            <span class="badge">SQL Server</span>
-            <span class="badge">CRUD</span>
-            <span class="badge">Layered Architecture</span>
+          <p class="proj-subtitle">
+            <span data-en="CRUD-based system for managing salon operations, built with layered architecture and SQL Server persistence."
+                  data-es="Sistema CRUD para gestionar operaciones de salón, con arquitectura por capas y persistencia en SQL Server.">
+              CRUD-based system for managing salon operations, built with layered architecture and SQL Server persistence.
+            </span>
+          </p>
+
+          <div class="tag-row">
+            <span class="tag">C#</span>
+            <span class="tag">.NET</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">CRUD</span>
+            <span class="tag">Layered Architecture</span>
           </div>
 
           <ul class="proj-points">
-            <li>Implements structured CRUD flows with business rules and validations.</li>
-            <li>Uses SQL Server persistence and clear separation of responsibilities.</li>
-            <li>Focused on maintainability and technical documentation.</li>
+            <li data-en="Implements structured CRUD flows with business rules and validations."
+                data-es="Implementa flujos CRUD estructurados con reglas de negocio y validaciones.">
+              Implements structured CRUD flows with business rules and validations.
+            </li>
+            <li data-en="Uses SQL Server persistence and clear separation of responsibilities."
+                data-es="Utiliza persistencia en SQL Server y una clara separación de responsabilidades.">
+              Uses SQL Server persistence and clear separation of responsibilities.
+            </li>
+            <li data-en="Focused on maintainability and technical documentation."
+                data-es="Enfocado en mantenibilidad y documentación técnica.">
+              Focused on maintainability and technical documentation.
+            </li>
           </ul>
 
           <div class="proj-actions">
-            <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/DnlSQ/Solucion_Salon1">Repository</a>
-            <a class="btn btn-primary" target="_blank" rel="noopener"href="https://github.com/DnlSQ/Solucion_Salon1/blob/master/README.md">README</a>
-            <a class="btn btn-primary" target="_blank" rel="noopener"href="https://github.com/DnlSQ/Solucion_Salon1/tree/master/assets/screenshots">Screenshots</a>
+            <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/DnlSQ/Solucion_Salon1" data-en="Repository" data-es="Repositorio">Repository</a>
+            <a class="btn btn-outline" target="_blank" rel="noopener" href="https://github.com/DnlSQ/Solucion_Salon1/blob/master/README.md">README</a>
+            <a class="btn btn-outline" target="_blank" rel="noopener" href="https://github.com/DnlSQ/Solucion_Salon1/tree/master/assets/screenshots" data-en="Screenshots" data-es="Capturas">Screenshots</a>
           </div>
         </article>
 
         <!-- Project 2 -->
         <article class="proj-card">
           <div class="proj-top">
-            <div>
-              <h4>Inventory Management System (C#/.NET)</h4>
-              <p class="proj-subtitle">
-                Inventory control system built with SQL Server persistence, validations and backend-oriented design.
-              </p>
-            </div>
-            <span class="proj-status">MVP functional</span>
+            <h4 data-en="Inventory Management System (C#/.NET)" data-es="Sistema de Gestión de Inventario (C#/.NET)">Inventory Management System (C#/.NET)</h4>
+            <span class="proj-status" data-en="MVP functional" data-es="MVP funcional">MVP functional</span>
           </div>
 
-          <div class="proj-badges">
-            <span class="badge">C#</span>
-            <span class="badge">.NET</span>
-            <span class="badge">SQL Server</span>
-            <span class="badge">SSMS</span>
-            <span class="badge">CRUD</span>
+          <p class="proj-subtitle">
+            <span data-en="Inventory control system built with SQL Server persistence, validations and backend-oriented design."
+                  data-es="Sistema de control de inventario con persistencia en SQL Server, validaciones y diseño orientado a backend.">
+              Inventory control system built with SQL Server persistence, validations and backend-oriented design.
+            </span>
+          </p>
+
+          <div class="tag-row">
+            <span class="tag">C#</span>
+            <span class="tag">.NET</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">SSMS</span>
+            <span class="tag">CRUD</span>
           </div>
 
           <ul class="proj-points">
-            <li>Product and stock management with structured persistence.</li>
-            <li>Focus on maintainable backend logic and clear data handling.</li>
-            <li>Documentation included via README and project structure.</li>
+            <li data-en="Product and stock management with structured persistence."
+                data-es="Gestión de productos y stock con persistencia estructurada.">
+              Product and stock management with structured persistence.
+            </li>
+            <li data-en="Focus on maintainable backend logic and clear data handling."
+                data-es="Enfoque en lógica backend mantenible y manejo claro de datos.">
+              Focus on maintainable backend logic and clear data handling.
+            </li>
+            <li data-en="Documentation included via README and project structure."
+                data-es="Documentación incluida mediante README y estructura del proyecto.">
+              Documentation included via README and project structure.
+            </li>
           </ul>
 
           <div class="proj-actions">
-            <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/DnlSQ/Solucion_InventarioFSv1.2">Repository</a>
-            <a class="btn btn-primary" target="_blank" rel="noopener"href="https://github.com/DnlSQ/Solucion_InventarioFSv1.2/blob/master/README.md">README</a>
-            <a class="btn btn-primary" target="_blank" rel="noopener"href="https://github.com/DnlSQ/Solucion_InventarioFSv1.2/tree/master/UX_InventarioFS">Screenshots</a>
+            <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/DnlSQ/Solucion_InventarioFSv1.2" data-en="Repository" data-es="Repositorio">Repository</a>
+            <a class="btn btn-outline" target="_blank" rel="noopener" href="https://github.com/DnlSQ/Solucion_InventarioFSv1.2/blob/master/README.md">README</a>
+            <a class="btn btn-outline" target="_blank" rel="noopener" href="https://github.com/DnlSQ/Solucion_InventarioFSv1.2/tree/master/assets/screenshots" data-en="Screenshots" data-es="Capturas">Screenshots</a>
           </div>
         </article>
 
         <!-- Project 3 -->
         <article class="proj-card">
           <div class="proj-top">
-            <div>
-              <h4>Come Sano — AI-assisted Healthy Recipe App</h4>
-              <p class="proj-subtitle">
-                Mobile app concept (MVP in development) to suggest healthy recipes from ingredients entered by text or photo.
-              </p>
-            </div>
-            <span class="proj-status proj-status-muted">In development</span>
+            <h4 data-en="Come Sano — AI-assisted Healthy Recipe App" data-es="Come Sano — App de Recetas Saludables con IA">Come Sano — AI-assisted Healthy Recipe App</h4>
+            <span class="proj-status proj-status-muted" data-en="In development" data-es="En desarrollo">In development</span>
           </div>
 
-          <div class="proj-badges">
-            <span class="badge">Mobile App</span>
-            <span class="badge">AI-assisted</span>
-            <span class="badge">Product MVP</span>
-            <span class="badge">UX/UI</span>
+          <p class="proj-subtitle">
+            <span data-en="Mobile app concept (MVP in development) to suggest healthy recipes from ingredients entered by text or photo."
+                  data-es="Concepto de app móvil (MVP en desarrollo) que sugiere recetas saludables a partir de ingredientes ingresados por texto o foto.">
+              Mobile app concept (MVP in development) to suggest healthy recipes from ingredients entered by text or photo.
+            </span>
+          </p>
+
+          <div class="tag-row">
+            <span class="tag">Mobile App</span>
+            <span class="tag">AI-assisted</span>
+            <span class="tag">Product MVP</span>
+            <span class="tag">UX/UI</span>
           </div>
 
           <ul class="proj-points">
-            <li>Ingredient input by text (MVP) and photo-assisted input (planned).</li>
-            <li>Recipe list with calories per portion and estimated preparation time.</li>
-            <li>Step-by-step recipe instructions with a friendly, intuitive experience.</li>
-            <li>Designed for users aiming to eat healthier and improve lifestyle habits.</li>
+            <li data-en="Ingredient input by text (MVP) and photo-assisted input (planned)."
+                data-es="Ingreso de ingredientes por texto (MVP) y por foto (planificado).">
+              Ingredient input by text (MVP) and photo-assisted input (planned).
+            </li>
+            <li data-en="Recipe list with calories per portion and estimated preparation time."
+                data-es="Listado de recetas con calorías por porción y tiempo estimado de preparación.">
+              Recipe list with calories per portion and estimated preparation time.
+            </li>
+            <li data-en="Step-by-step recipe instructions with a friendly, intuitive experience."
+                data-es="Instrucciones paso a paso con una experiencia amigable e intuitiva.">
+              Step-by-step recipe instructions with a friendly, intuitive experience.
+            </li>
+            <li data-en="Designed for users aiming to eat healthier and improve lifestyle habits."
+                data-es="Diseñado para usuarios que buscan comer más sano y mejorar hábitos de vida.">
+              Designed for users aiming to eat healthier and improve lifestyle habits.
+            </li>
           </ul>
 
           <div class="proj-actions">
-            <a class="btn btn-primary" target="_blank" rel="noopener"href="https://github.com/DnlSQ/come-sano-mvp/blob/main/README.md">README</a>
+            <a class="btn btn-primary" target="_blank" rel="noopener" href="https://github.com/DnlSQ/come-sano-mvp" data-en="Repository" data-es="Repositorio">Repository</a>
+            <a class="btn btn-outline" target="_blank" rel="noopener" href="https://github.com/DnlSQ/come-sano-mvp/blob/main/README.md">README</a>
+            <a class="btn btn-outline is-disabled" href="#" aria-disabled="true" data-en="Screenshots (in progress)" data-es="Capturas (en progreso)">Screenshots (in progress)</a>
           </div>
         </article>
-
       </div>
-    </div>
-  </section>
-  
-  <!-- ===== SKILLS ===== -->
-  <section id="skills">
-    <div class="container">
-      <h3>Skills</h3>
+    </section>
+    
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <h3 data-en="Skills" data-es="Habilidades">Skills</h3>
+      <div class="divider"></div>
 
-      <details class="accordion">
-        <summary>Backend &amp; Programming</summary>
-        <div class="accordion-content">
-          <ul class="skills">
-            <li>C#</li>
-            <li>.NET</li>
-            <li>Python (basic)</li>
-            <li>JavaScript (basic)</li>
-          </ul>
-        </div>
-      </details>
+      <div class="skills-accordion">
+        <details>
+          <summary data-en="Backend & Programming" data-es="Backend y Programación">Backend & Programming</summary>
+          <div class="skills-pills">
+            <span class="pill">C#</span>
+            <span class="pill">.NET</span>
+            <span class="pill">Python (basic)</span>
+            <span class="pill">JavaScript (basic)</span>
+          </div>
+        </details>
 
-      <details class="accordion">
-        <summary>Databases &amp; Data</summary>
-        <div class="accordion-content">
-          <ul class="skills">
-            <li>SQL Server</li>
-            <li>MongoDB</li>
-            <li>Relational Databases</li>
-            <li>NoSQL Databases</li>
-            <li>Stored Procedures</li>
-            <li>Data Modeling</li>
-          </ul>
-        </div>
-      </details>
+        <details>
+          <summary data-en="Databases & Data" data-es="Bases de Datos y Datos">Databases & Data</summary>
+          <div class="skills-pills">
+            <span class="pill">SQL Server</span>
+            <span class="pill">MongoDB</span>
+            <span class="pill">Relational Databases</span>
+            <span class="pill">NoSQL Databases</span>
+            <span class="pill">Stored Procedures</span>
+            <span class="pill">Data Modeling</span>
+          </div>
+        </details>
 
-      <details class="accordion">
-        <summary>Frontend &amp; UI</summary>
-        <div class="accordion-content">
-          <ul class="skills">
-            <li>HTML</li>
-            <li>CSS</li>
-          </ul>
-        </div>
-      </details>
+        <details>
+          <summary data-en="Frontend & UI" data-es="Frontend e Interfaz">Frontend & UI</summary>
+          <div class="skills-pills">
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+          </div>
+        </details>
 
-      <details class="accordion">
-        <summary>Tools &amp; Platforms</summary>
-        <div class="accordion-content">
-          <ul class="skills">
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Postman</li>
-            <li>Visual Studio</li>
-            <li>SQL Server Management Studio (SSMS)</li>
-          </ul>
-        </div>
-      </details>
+        <details>
+          <summary data-en="Tools & Platforms" data-es="Herramientas y Plataformas">Tools & Platforms</summary>
+          <div class="skills-pills">
+            <span class="pill">Git</span>
+            <span class="pill">GitHub</span>
+            <span class="pill">Postman</span>
+            <span class="pill">Visual Studio</span>
+            <span class="pill">SQL Server Management Studio (SSMS)</span>
+          </div>
+        </details>
 
-      <details class="accordion">
-        <summary>Engineering &amp; Automation</summary>
-        <div class="accordion-content">
-          <ul class="skills">
-            <li>Process Automation</li>
-            <li>Industrial Systems</li>
-            <li>Technical Documentation</li>
-            <li>Continuous Improvement</li>
-          </ul>
-        </div>
-      </details>
-    </div>
-  </section>
+        <details>
+          <summary data-en="Engineering & Automation" data-es="Ingeniería y Automatización">Engineering & Automation</summary>
+          <div class="skills-pills">
+            <span class="pill">Process Automation</span>
+            <span class="pill">Industrial Systems</span>
+            <span class="pill">Technical Documentation</span>
+            <span class="pill">Continuous Improvement</span>
+          </div>
+        </details>
+      </div>
+    </section>
 
-  <!-- ===== TECHNICAL CAPABILITIES ===== -->
-  <section id="capabilities">
-    <div class="container">
-      <h3>Technical Capabilities</h3>
+    <!-- ===== TECHNICAL CAPABILITIES ===== -->
+    <section id="capabilities" class="section">
+      <h3 data-en="Technical Capabilities" data-es="Capacidades Técnicas">Technical Capabilities</h3>
+      <div class="divider"></div>
 
       <div class="cap-grid">
-        <div class="cap-item">Backend development with structured business logic and data persistence.</div>
-        <div class="cap-item">Design and implementation of CRUD-based systems using layered architecture.</div>
-        <div class="cap-item">Relational database design, queries and stored procedures.</div>
-        <div class="cap-item">Process automation and system-oriented problem solving.</div>
-        <div class="cap-item">Analysis of operational data to support decision making.</div>
-        <div class="cap-item">Technical documentation and structured system design.</div>
+        <div class="cap-item" data-en="Backend development with structured business logic and data persistence."
+             data-es="Desarrollo backend con lógica de negocio estructurada y persistencia de datos.">
+          Backend development with structured business logic and data persistence.
+        </div>
+
+        <div class="cap-item" data-en="Design and implementation of CRUD-based systems using layered architecture."
+             data-es="Diseño e implementación de sistemas CRUD utilizando arquitectura por capas.">
+          Design and implementation of CRUD-based systems using layered architecture.
+        </div>
+
+        <div class="cap-item" data-en="Relational database design, queries and stored procedures."
+             data-es="Diseño de bases de datos relacionales, consultas y procedimientos almacenados.">
+          Relational database design, queries and stored procedures.
+        </div>
+
+        <div class="cap-item" data-en="Process automation and system-oriented problem solving."
+             data-es="Automatización de procesos y resolución de problemas orientada a sistemas.">
+          Process automation and system-oriented problem solving.
+        </div>
+
+        <div class="cap-item" data-en="Analysis of operational data to support decision making."
+             data-es="Análisis de datos operativos para apoyar la toma de decisiones.">
+          Analysis of operational data to support decision making.
+        </div>
+
+        <div class="cap-item" data-en="Technical documentation and structured system design."
+             data-es="Documentación técnica y diseño estructurado de sistemas.">
+          Technical documentation and structured system design.
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== CERTIFICATIONS ===== -->
-  <section id="certifications">
-    <div class="container">
-      <h3>Certifications</h3>
+    <!-- ===== CERTIFICATIONS ===== -->
+    <section id="certifications" class="section">
+      <h3 data-en="Certifications" data-es="Certificaciones">Certifications</h3>
+      <div class="divider"></div>
 
-      <h4>Software Development &amp; Data</h4>
+      <h4 data-en="Software Development & Data" data-es="Desarrollo de Software y Datos">Software Development & Data</h4>
       <ul>
-        <li>Artificial Intelligence &amp; ChatGPT — From Zero to Advanced (Udemy)</li>
+        <li>Artificial Intelligence & ChatGPT — From Zero to Advanced (Udemy)</li>
         <li>Prompt Engineering (LinkedIn Learning)</li>
         <li>Python Essential Training (LinkedIn Learning)</li>
         <li>Data Analysis Foundations (LinkedIn Learning)</li>
       </ul>
 
-      <h4>Quality, Process &amp; Engineering</h4>
+      <h4 data-en="Quality, Process & Engineering" data-es="Calidad, Procesos e Ingeniería">Quality, Process & Engineering</h4>
       <ul>
         <li>Six Sigma Green Belt — Training (DMAIC)</li>
         <li>ISO 9001:2015 — Quality Management Systems</li>
         <li>Fundamentals of Operational Excellence</li>
       </ul>
 
-      <h4>Agile &amp; Project Management</h4>
+      <h4 data-en="Agile & Project Management" data-es="Agile y Gestión de Proyectos">Agile & Project Management</h4>
       <ul>
         <li>Scrum Fundamentals</li>
         <li>Jira Administration — Basic</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== EDUCATION ===== -->
-  <section id="education">
-    <div class="container">
-      <h3>Education</h3>
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section">
+      <h3 data-en="Education" data-es="Educación">Education</h3>
+      <div class="divider"></div>
 
-      <h4>Bachelor’s Degree in Systems Engineering</h4>
-      <p>Universidad Americana (UAM) — Costa Rica</p>
-      <p>
-        Formación enfocada en desarrollo de software, bases de datos, análisis de sistemas y resolución estructurada de problemas.
+      <div class="edu-card">
+        <h4 data-en="Bachelor’s Degree in Systems Engineering" data-es="Bachillerato en Ingeniería de Sistemas">Bachelor’s Degree in Systems Engineering</h4>
+        <p class="edu-place">
+          <span data-en="Universidad Americana (UAM) – Costa Rica" data-es="Universidad Americana (UAM) – Costa Rica">
+            Universidad Americana (UAM) – Costa Rica
+          </span>
+        </p>
+        <p class="edu-desc">
+          <span data-en="Coursework focused on software development, databases, systems analysis, and structured problem solving."
+                data-es="Formación enfocada en desarrollo de software, bases de datos, análisis de sistemas y resolución estructurada de problemas.">
+            Coursework focused on software development, databases, systems analysis, and structured problem solving.
+          </span>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact">
+      <h3 data-en="Contact" data-es="Contacto">Contact</h3>
+      <div class="divider"></div>
+
+      <p class="contact-intro">
+        <span data-en="Interested in collaborating or learning more about my work? Feel free to reach out."
+              data-es="¿Te interesa colaborar o conocer más sobre mi trabajo? Con gusto podemos conversar.">
+          Interested in collaborating or learning more about my work? Feel free to reach out.
+        </span>
       </p>
-    </div>
-  </section>
-<section id="contact">
-  <div class="container">
-    <h3>Contact</h3>
 
-    <p class="contact-intro">
-      Interested in collaborating or learning more about my work?
-      Feel free to reach out.
-    </p>
+      <div class="contact-box">
+        <p>
+          <strong><span data-en="Phone" data-es="Teléfono">Phone</span>:</strong>
+          <a href="tel:+50684095364">+506 8409 5364</a>
+        </p>
+        <p>
+          <strong><span data-en="Email" data-es="Correo">Email</span>:</strong>
+          <a href="mailto:dnl20sq@gmail.com">dnl20sq@gmail.com</a>
+        </p>
 
-    <div class="contact-grid">
-      <div class="contact-item">
-        <span class="contact-label">Phone</span>
-        <a href="tel:+50684095364">+506 8409 5364</a>
+        <div class="contact-actions">
+          <a class="btn primary" data-en="LinkedIn" data-es="LinkedIn" target="_blank" rel="noopener"
+             href="https://www.linkedin.com/in/daniel-felipe-solano-quiros">
+            LinkedIn
+          </a>
+          <a class="btn secondary" data-en="GitHub" data-es="GitHub" target="_blank" rel="noopener"
+             href="https://github.com/DnlSQ">
+            GitHub
+          </a>
+        </div>
       </div>
+    </section>
+  </main>
 
-      <div class="contact-item">
-        <span class="contact-label">Email</span>
-        <a href="mailto:dnl20sq@gmail.com">dnl20sq@gmail.com</a>
-      </div>
-
-      <div class="contact-actions">
-        <a href="https://www.linkedin.com/in/daniel-felipe-solano-quiros"
-           target="_blank"
-           class="btn primary">
-          LinkedIn
-        </a>
-
-        <a href="https://github.com/DnlSQ"
-           target="_blank"
-           class="btn secondary">
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <footer>
-    <p>© 2026 Daniel Felipe Solano Quiros — Portfolio</p>
+  <footer class="footer">
+    <small>
+      <span data-en="© 2026 Daniel Felipe Solano Quiros — Portfolio" data-es="© 2026 Daniel Felipe Solano Quiros — Portafolio">
+        © 2026 Daniel Felipe Solano Quiros — Portfolio
+      </span>
+    </small>
   </footer>
 
+  <script>
+    (function () {
+      const langToggle = document.getElementById("langToggle");
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.getElementById("primary-nav");
+
+      function setLang(lang) {
+        document.documentElement.lang = lang;
+        document.body.dataset.lang = lang;
+
+        document.querySelectorAll("[data-en][data-es]").forEach(el => {
+          el.textContent = (lang === "es") ? el.getAttribute("data-es") : el.getAttribute("data-en");
+        });
+
+        // Button shows the language you can switch to
+        langToggle.textContent = (lang === "es") ? "EN" : "ES";
+      }
+
+      // default EN
+      setLang("en");
+
+      langToggle?.addEventListener("click", () => {
+        const current = document.body.dataset.lang || "en";
+        setLang(current === "en" ? "es" : "en");
+      });
+
+      // Mobile menu
+      function closeMenu() {
+        nav.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open menu");
+      }
+
+      function toggleMenu() {
+        const isOpen = nav.classList.toggle("open");
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+      }
+
+      menuToggle?.addEventListener("click", toggleMenu);
+
+      // Close menu after clicking a link (mobile)
+      nav?.querySelectorAll("a").forEach(a => {
+        a.addEventListener("click", () => {
+          if (window.matchMedia("(max-width: 860px)").matches) closeMenu();
+        });
+      });
+
+      // Close menu on resize to desktop
+      window.addEventListener("resize", () => {
+        if (!window.matchMedia("(max-width: 860px)").matches) closeMenu();
+      });
+    })();
+  </script>
 </body>
 </html>
