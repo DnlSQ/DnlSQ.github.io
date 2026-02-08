@@ -131,8 +131,7 @@ body{
 
 /* ===== SKILLS (Accordion) ===== */
 .skills-accordion details{
- /* background: transparent;*/
-  background: #0b1222;
+ background: transparent;
   margin-bottom: 10px;
 }
 .skills-accordion summary{
